@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dbbob456or4af"]
+
+[ext_resource type="Texture2D" uid="uid://skjs8tkl2kdh" path="res://assets/icon.svg" id="1_cbfvs"]
+[ext_resource type="Script" uid="uid://banc4p4thmlv3" path="res://scripts/grabbable.gd" id="2_a0y2b"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_y32ns"]
+radius = 75.32596
+
+[node name="object" type="Node2D" unique_id=1888257682]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=827967082]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=205381480]
+shape = SubResource("CircleShape2D_y32ns")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1032881790]
+texture = ExtResource("1_cbfvs")
+
+[node name="Grabbable" type="Node2D" parent="." unique_id=1702169088]
+script = ExtResource("2_a0y2b")
+metadata/_custom_type_script = "uid://banc4p4thmlv3"
